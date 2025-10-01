@@ -1,49 +1,70 @@
-# Static_Variable
+## Static_Variable
+This Java program demonstrates the use of **static variables and methods** in a class.  
+It automatically assigns **unique SeatNo**, keeps track of the **total number of objects**, and shows how **shared class-level data** can be updated for all objects.
+---
 
-In Java, a **static variable** (also called a **class variable**) belongs to the **class** rather than any specific object.  
+## 🔹 Static Variables
 
-- All objects of the class **share the same copy** of the static variable.  
-- Static variables are **initialized only once** when the class is loaded.  
-- Stored in the **method area** of JVM memory, not in the heap.
+**Definition:**  
+A static variable belongs to the class rather than to individual objects.  
+- Only **one copy** exists for all instances.  
+- Stored in the **method area**.  
+- Useful for **shared data**, counters, or IDs.
+
+**Static variables in this program:**
+| Variable       | Purpose                                           |
+|----------------|--------------------------------------------------|
+| `university`   | Shared name among all objects                    |
+| `count`        | Total number of objects created                  |
+| `nextNumber`   | Generates unique IDs automatically              |
 
 ---
 
-This is a simple **Java program** that demonstrates the use of **static variables**, **object creation**, and **seat number generation** for students in a university.
+## 🔹 Instance Variables
+
+**Definition:**  
+Instance variables belong to individual objects. Each object has its **own copy**.
+
+**Instance variables in this program:**
+| Variable       | Purpose                                           |
+|----------------|--------------------------------------------------|
+| `name`         | Name of the object                               |
+| `seatNumber`   | Unique ID assigned to the object                 |
 
 ---
 
-## Features
+## 🔹 Static Methods
 
-- Automatically generates **seat numbers** for students in the format: `B2411000###`.
-- Keeps track of **total students admitted** using a static variable.
-- Allows **university name** to be shared and updated for all students.
-- Demonstrates the use of **`static` methods** and **`toString()`** for easy display.
+**Definition:**  
+Static methods belong to the class and can be called **without creating an object**.  
+- Can directly access **static variables**.  
+- Cannot directly access **instance variables**.  
+
+**Example in this program:**
+- `showTotalStudents()` – Displays the total number of objects created.
 
 ---
 
-## Class Description
+## ✅ Program Features
 
-### `Student` Class
+1. **Automatic SeatNo Generation**
+   - IDs follow a consistent format (e.g., `B2411006101`, `B24110006102`).  
+   - Ensures **unique SeatNo** for every object.
 
-**Variables:**
+2. **Shared Class-Level Data**
+   - Updating a static variable like `university` affects **all objects**.
 
-- `String name` – Name of the student.
-- `String seatNumber` – Unique seat number generated automatically.
-- `static String university` – Shared among all students.
-- `static int count` – Keeps track of the total number of students.
-- `static int nextNumber` – Helps generate sequential seat numbers.
+3. **Object Count Tracking**
+   - Keeps track of the **total number of objects created**.
 
-**Constructor:**
+---
 
-- Accepts `name` as a parameter.
-- Automatically generates the seat number in the format `B2411000###`.
-- Increments `count` and `nextNumber`.
+## ⚡ How the Program Works
 
-**Methods:**
+1. Create multiple objects of the class.  
+2. Assign **unique SeatNo automatically**.  
+3. Print object details including **name, SeatNo, and shared data**.  
+4. Display **total objects created** using a static method.  
+5. Update a shared variable and observe the change across all objects.
 
-- `toString()` – Returns student information in readable format.
-- `static void showTotalStudents()` – Displays total students admitted.
-
-
-
-Student s3 = new Student("Ahmed")
+---
