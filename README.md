@@ -1,4 +1,3 @@
-## Static_Variable
 This Java program demonstrates the use of static variables and methods in a class.  
 It automatically assigns unique SeatNo, keeps track of the total number of objects, and shows how shared class-level data can be updated for all objects.
 
