@@ -44,7 +44,6 @@ This is a simple **Java program** that demonstrates the use of **static variable
 - `toString()` – Returns student information in readable format.
 - `static void showTotalStudents()` – Displays total students admitted.
 
----
 
 
-Student s3 = new Student("Ahmed");
+Student s3 = new Student("Ahmed")
