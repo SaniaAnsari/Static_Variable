@@ -64,16 +64,13 @@ Static methods belong to the class and can be called **without creating an objec
 
 ---
 ## 💻 Example Run
-B2411000101 - Sania (KU)
-B24110006102 - Zoha (KU)
-B24110006103 - Laiba (KU)
+B24110006101-Sania	(KU)
+B24110006102-Zoha	(KU)
+B24110006103-Laiba	(KU)
 Total students admitted: 3
-
-After updating university name:
-
-B24110006101 - Sania (NED University)
-B2411000102 - Zoha (NED University)
-B24110006103 - Laiba (NED University)
+----------After updating university name----------
+B24110006101-Sania	(Ned University)
+B24110006102-Zoha	(Ned University)
+B24110006103-Laiba	(Ned University)
 Total students admitted: 3
-
 
