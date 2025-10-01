@@ -67,11 +67,11 @@ Static methods belong to the class and can be called **without creating an objec
 B24KU100 - Ali (Karachi University)
 B24KU101 - Sana (Karachi University)
 B24KU102 - Ahmed (Karachi University)
-Total students admitted: 3
-
-After updating university name
+Total objects created: 3
+After updating the university name
 
 B24KU100 - Ali (NED University)
 B24KU101 - Sana (NED University)
 B24KU102 - Ahmed (NED University)
-Total students admitted: 3
+Total objects created: 3
+
